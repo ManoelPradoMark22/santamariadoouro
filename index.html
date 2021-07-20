@@ -6,7 +6,6 @@
     <meta name="viewport" content="width=device-width, initial-scale=1.0" />
 
     <!-- Modal -->
-    
     <link rel="stylesheet" href="https://www.w3schools.com/w3css/4/w3.css">
 
     <link rel="sortcut icon" href="favicon.ico"/>;
@@ -32,49 +31,78 @@
     />
   </head>
   <body>
-    <!-- Modal -->
+    <!-- The Modal -->
     <div id="myModal" class="modal">
 
-      <!-- Modal content -->
-      <div class="modal-content">
-        <span class="close">&times;</span>
-        <p>
-          <div>  
-            <div class="w3-bar w3-border-bottom">
-             <button class="tablink w3-bar-item w3-button" onclick="openCity(event, 'FirstReading')">1ª Leitura</button>
-             <button class="tablink w3-bar-item w3-button" onclick="openCity(event, 'Salmo')">Salmo</button>
-             <button class="tablink w3-bar-item w3-button" onclick="openCity(event, 'SecondReading')">2ª Leitura</button>
-             <button class="tablink w3-bar-item w3-button" onclick="openCity(event, 'Evangelho')">Evangelho</button>
-            </div>
-          
-            <div id="FirstReading" class="w3-container city">
-              <h4>Primeira Leitura (Êx 14,21-15,1)</h4>
-              <p>Leitura do Livro do Êxodo.</p>
-              <p>
-                Naqueles dias, 14,21Moisés estendeu a mão sobre o mar, e durante toda a noite o Senhor fez soprar sobre o mar um vento leste muito forte; e as águas se dividiram. 22Então, os filhos de Israel entraram pelo meio do mar a pé enxuto, enquanto as águas formavam como que uma muralha à direita e à esquerda. 23Os egípcios puseram-se a persegui-los, e todos os cavalos do Faraó, carros e cavaleiros os seguiram mar adentro. 24Ora, de madrugada, o Senhor lançou um olhar, desde a coluna de fogo e da nuvem, sobre as tropas egípcias e as pôs em pânico. 25Bloqueou as rodas dos seus carros, de modo que só a muito custo podiam avançar. Disseram, então, os egípcios: “Fujamos de Israel! Pois o Senhor combate a favor deles, contra nós”. 26O Senhor disse a Moisés: “Estende a mão sobre o mar, para que as águas se voltem contra os egípcios, seus carros e cavaleiros”. 27Moisés estendeu a mão sobre o mar e, ao romper da manhã, o mar voltou ao seu leito normal, enquanto os egípcios, em fuga, corriam ao encontro das águas, e o Senhor os mergulhou no meio das ondas. 28As águas voltaram e cobriram carros, cavaleiros e todo o exército do Faraó, que tinha entrado no mar em perseguição de Israel. Não escapou um só. 29Os filhos de Israel, ao contrário, tinham passado a pé enxuto pelo meio do mar, cujas águas lhes formavam uma muralha à direita e à esquerda. 30Naquele dia, o Senhor livrou Israel da mão dos egípcios, e Israel viu os egípcios mortos nas praias do mar, 31e a mão poderosa do Senhor agir contra eles. O povo temeu o Senhor, e teve fé no Senhor e em Moisés, seu servo. 15,1Então, Moisés e os filhos de Israel cantaram ao Senhor este cântico:
-              </p>
-              <p>- Palavra do Senhor.</p>
-              <p>- Graças a Deus.</p>
-            </div>
-          
-            <div id="Salmo" class="w3-container city">
-             <h1>Paris</h1>
-             <p>Paris is the capital of France.</p>
-             <p>Lorem ipsum dolor sit amet, consectetur adipiscing elit.</p>
-            </div>
-          
-            <div id="SecondReading" class="w3-container city">
-             <h1>Tokyo</h1>
-             <p>Tokyo is the capital of Japan.</p><br>
-            </div>
+      <!-- The Close Button -->
+      <span class="close">&times;</span>
 
-            <div id="Evangelho" class="w3-container city">
-              <h1>Tokyo</h1>
-              <p>Tokyo is the capital of Japan.</p><br>
-             </div>
-          </div>
-        </p>
+      <!-- Modal Content (The Image) -->
+      <div>  
+        <div class="w3-bar w3-border-bottom">
+         <button class="tablink w3-bar-item w3-button" onclick="openCity(event, 'FirstReading')">1ª Leitura</button>
+         <button class="tablink w3-bar-item w3-button" onclick="openCity(event, 'Salmo')">Salmo</button>
+         <!--
+         <button class="tablink w3-bar-item w3-button" onclick="openCity(event, 'SecondReading')">2ª Leitura</button>
+         -->
+         <button class="tablink w3-bar-item w3-button" onclick="openCity(event, 'Evangelho')">Evangelho</button>
+        </div>
+      
+        <div id="FirstReading" class="w3-container city" style="color:white">
+          <h4>Primeira Leitura (Êx 14,21-15,1)</h4>
+          <p>Leitura do Livro do Êxodo.</p><br>
+          <p>
+            Naqueles dias, 14,21Moisés estendeu a mão sobre o mar, e durante toda a noite o Senhor fez soprar sobre o mar um vento leste muito forte; e as águas se dividiram. 22Então, os filhos de Israel entraram pelo meio do mar a pé enxuto, enquanto as águas formavam como que uma muralha à direita e à esquerda. 23Os egípcios puseram-se a persegui-los, e todos os cavalos do Faraó, carros e cavaleiros os seguiram mar adentro. 24Ora, de madrugada, o Senhor lançou um olhar, desde a coluna de fogo e da nuvem, sobre as tropas egípcias e as pôs em pânico. 25Bloqueou as rodas dos seus carros, de modo que só a muito custo podiam avançar. Disseram, então, os egípcios: “Fujamos de Israel! Pois o Senhor combate a favor deles, contra nós”. 26O Senhor disse a Moisés: “Estende a mão sobre o mar, para que as águas se voltem contra os egípcios, seus carros e cavaleiros”. 27Moisés estendeu a mão sobre o mar e, ao romper da manhã, o mar voltou ao seu leito normal, enquanto os egípcios, em fuga, corriam ao encontro das águas, e o Senhor os mergulhou no meio das ondas. 28As águas voltaram e cobriram carros, cavaleiros e todo o exército do Faraó, que tinha entrado no mar em perseguição de Israel. Não escapou um só. 29Os filhos de Israel, ao contrário, tinham passado a pé enxuto pelo meio do mar, cujas águas lhes formavam uma muralha à direita e à esquerda. 30Naquele dia, o Senhor livrou Israel da mão dos egípcios, e Israel viu os egípcios mortos nas praias do mar, 31e a mão poderosa do Senhor agir contra eles. O povo temeu o Senhor, e teve fé no Senhor e em Moisés, seu servo. 15,1Então, Moisés e os filhos de Israel cantaram ao Senhor este cântico:
+          </p>
+          <p>- Palavra do Senhor.</p>
+          <p>- Graças a Deus.</p>
+        </div>
+      
+        <div id="Salmo" class="w3-container city" style="color:white">
+         <h4>Responsório (Êx 15)</h4>
+         <p>— Ao Senhor quero cantar, pois fez brilhar a sua glória!</p>
+         <p style="font-weight:bold">— Ao Senhor quero cantar, pois fez brilhar a sua glória!</p>
+         <p>— Ao soprar a vossa ira amontoaram-se as águas, levantaram-se as ondas e formaram uma muralha, e imóveis se fizeram, em meio ao mar, as grandes vagas.</p>
+         <p>— O inimigo tinha dito: “Hei de segui-los e alcançá-los! Repartirei seus despojos e minh’alma saciarei; arrancarei da minha espada e minha mão os matará!”</p>
+         <p>— Mas soprou o vosso vento, e o mar os recobriu; afundaram como chumbo entre as águas agitadas. Estendestes vossa mão, e a terra os devorou.</p>
+         <p>— Vós, Senhor, o levareis e o plantareis em vosso Monte, no lugar que preparastes para a vossa habitação, no Santuário construído pelas vossas próprias mãos.</p>
+        </div>
+      
+        <!--
+        <div id="SecondReading" class="w3-container city" style="color:white">
+          <h1>Tokyo</h1>
+          <p>Tokyo is the capital of Japan.</p><br>
+        </div>
+        -->
+
+        <div id="Evangelho" class="w3-container city" style="color:white">
+          <h4>Evangelho (Mt 12,46-50)</h4>
+          <p>
+            — O Senhor esteja convosco.
+            <br>
+            <b>— Ele está no meio de nós.</b>
+            <br>
+            — Proclamação do Evangelho de Jesus Cristo + segundo Mateus.
+            <br>
+            <b>— Glória a vós, Senhor.</b>
+            <br>
+          </p>
+          <br>
+          <p>
+            Naquele tempo, 46enquanto Jesus estava falando às multidões, sua mãe e seus irmãos ficaram do lado de fora, procurando falar com ele. 47Alguém disse a Jesus: “Olha! Tua mãe e teus irmãos estão aí fora, e querem falar contigo”. 48Jesus perguntou àquele que tinha falado: “Quem é minha mãe, e quem são meus irmãos?” 49E, estendendo a mão para os discípulos, Jesus disse: “Eis minha mãe e meus irmãos. 50Pois todo aquele que faz a vontade do meu Pai, que está nos céus, esse é meu irmão, minha irmã e minha mãe”.
+          </p>
+          <br>
+          <p>
+            — Palavra da Salvação.
+            <br>
+            <b>— Glória a vós, Senhor.</b>
+          </p>
+         </div>
       </div>
+
+      <!-- Modal Caption (Image Text) -->
+      <div id="caption"></div>
+    </div>
     
     </div>
 
@@ -113,7 +141,7 @@
               De formatação à upgrade, tudo o que seu PC precisa para se tornar uma máquina!
               Se deseja ter um site próprio, conte conosco também!
             </p>
-            <a type="button" class="button" id="myBtn">Liturgia diária</a>
+            <a type="button" class="button" id="myImg">Liturgia diária</a>
           </div>
         </div>
       </section>
