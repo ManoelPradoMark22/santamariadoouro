@@ -1,0 +1,374 @@
+<!DOCTYPE html>
+<html lang="pt_BR">
+  <head>
+    <!-- PAGE INFO -->
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+
+    <!-- Modal -->
+    <link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/bootstrap/3.4.1/css/bootstrap.min.css">
+    <link rel="stylesheet" href="https://www.w3schools.com/w3css/4/w3.css">
+
+    <link rel="sortcut icon" href="favicon.ico"/>;
+    <title>Santa Maria do Ouro</title>
+
+    <!-- Icones -->
+    <link rel="stylesheet" href="assets/fonts/style.css" />
+
+    <!-- Swiper -->
+    <link
+      rel="stylesheet"
+      href="https://unpkg.com/swiper/swiper-bundle.min.css"
+    />
+
+    <!-- STYLES -->
+    <link rel="stylesheet" href="style.css" />
+
+    <!-- Fonts -->
+    <link rel="preconnect" href="https://fonts.gstatic.com" />
+    <link
+      href="https://fonts.googleapis.com/css2?family=DM+Sans:wght@400;500;700&family=Poppins:wght@400;500;700&display=swap"
+      rel="stylesheet"
+    />
+  </head>
+  <body>
+    <!-- Modal -->
+    <div id="myModal" class="modal fade" role="dialog">
+      <div class="modal-dialog">
+
+        <!-- Modal content-->
+        <div class="modal-content">
+          <div class="modal-header">
+            <button type="button" class="close" data-dismiss="modal">&times;</button>
+            <h4 class="modal-title">Liturgia diária</h4>
+          </div>
+          <div class="modal-body">
+            <div>  
+              <div class="w3-bar w3-border-bottom">
+               <button class="tablink w3-bar-item w3-button" onclick="openCity(event, 'FirstReading')">1ª Leitura</button>
+               <button class="tablink w3-bar-item w3-button" onclick="openCity(event, 'Salmo')">Salmo</button>
+               <button class="tablink w3-bar-item w3-button" onclick="openCity(event, 'SecondReading')">2ª Leitura</button>
+               <button class="tablink w3-bar-item w3-button" onclick="openCity(event, 'Evangelho')">Evangelho</button>
+              </div>
+            
+              <div id="FirstReading" class="w3-container city">
+                <h4>Primeira Leitura (Êx 14,21-15,1)</h4>
+                <p>Leitura do Livro do Êxodo.</p>
+                <p>
+                  Naqueles dias, 14,21Moisés estendeu a mão sobre o mar, e durante toda a noite o Senhor fez soprar sobre o mar um vento leste muito forte; e as águas se dividiram. 22Então, os filhos de Israel entraram pelo meio do mar a pé enxuto, enquanto as águas formavam como que uma muralha à direita e à esquerda. 23Os egípcios puseram-se a persegui-los, e todos os cavalos do Faraó, carros e cavaleiros os seguiram mar adentro. 24Ora, de madrugada, o Senhor lançou um olhar, desde a coluna de fogo e da nuvem, sobre as tropas egípcias e as pôs em pânico. 25Bloqueou as rodas dos seus carros, de modo que só a muito custo podiam avançar. Disseram, então, os egípcios: “Fujamos de Israel! Pois o Senhor combate a favor deles, contra nós”. 26O Senhor disse a Moisés: “Estende a mão sobre o mar, para que as águas se voltem contra os egípcios, seus carros e cavaleiros”. 27Moisés estendeu a mão sobre o mar e, ao romper da manhã, o mar voltou ao seu leito normal, enquanto os egípcios, em fuga, corriam ao encontro das águas, e o Senhor os mergulhou no meio das ondas. 28As águas voltaram e cobriram carros, cavaleiros e todo o exército do Faraó, que tinha entrado no mar em perseguição de Israel. Não escapou um só. 29Os filhos de Israel, ao contrário, tinham passado a pé enxuto pelo meio do mar, cujas águas lhes formavam uma muralha à direita e à esquerda. 30Naquele dia, o Senhor livrou Israel da mão dos egípcios, e Israel viu os egípcios mortos nas praias do mar, 31e a mão poderosa do Senhor agir contra eles. O povo temeu o Senhor, e teve fé no Senhor e em Moisés, seu servo. 15,1Então, Moisés e os filhos de Israel cantaram ao Senhor este cântico:
+                </p>
+                <p>- Palavra do Senhor.</p>
+                <p>- Graças a Deus.</p>
+              </div>
+            
+              <div id="Salmo" class="w3-container city">
+               <h1>Paris</h1>
+               <p>Paris is the capital of France.</p>
+               <p>Lorem ipsum dolor sit amet, consectetur adipiscing elit.</p>
+              </div>
+            
+              <div id="SecondReading" class="w3-container city">
+               <h1>Tokyo</h1>
+               <p>Tokyo is the capital of Japan.</p><br>
+              </div>
+
+              <div id="Evangelho" class="w3-container city">
+                <h1>Tokyo</h1>
+                <p>Tokyo is the capital of Japan.</p><br>
+               </div>
+            </div>
+          </div>
+          <div class="modal-footer">
+            <button type="button" class="btn btn-default" data-dismiss="modal">Fechar</button>
+          </div>
+        </div>
+
+      </div>
+    </div>
+
+    <header id="header">
+      <nav class="container">
+        <a class="logo" href="#">Santa Maria do Ouro</a>
+        <!-- menu -->
+        <div class="menu">
+          <ul class="grid">
+            <li><a class="title" href="#home">Início</a></li>
+            <li><a class="title" href="#about">Sobre</a></li>
+            <li><a class="title" href="#services">Serviços</a></li>
+            <li><a class="title" href="#testimonials">Depoimentos</a></li>
+            <li><a class="title" href="#contact">Contato</a></li>
+          </ul>
+        </div>
+        <!-- /menu -->
+        <div class="toggle icon-menu"></div>
+        <div class="toggle icon-close"></div>
+      </nav>
+    </header>
+
+    <main>
+      <!-- HOME -->
+      <section class="section" id="home">
+        <div class="container grid">
+          <div class="image">
+            <img
+              src="https://i.ytimg.com/vi/HiDZJclxjzY/maxresdefault.jpg"
+              alt="computador"
+            />
+          </div>
+          <div class="text">
+            <h2 class="title">Sites e Serviços <i>remotos</i> ou <i>presenciais</i> para seu PC!</h2>
+            <p>
+              De formatação à upgrade, tudo o que seu PC precisa para se tornar uma máquina!
+              Se deseja ter um site próprio, conte conosco também!
+            </p>
+            <a type="button" class="button" data-toggle="modal" data-target="#myModal">Liturgia diária</a>
+          </div>
+        </div>
+      </section>
+
+      <div class="divider-1"></div>
+
+      <!-- ABOUT -->
+      <section class="section" id="about">
+        <div class="container grid">
+          <div class="image">
+            <img
+              src="assets/fotos/santamaria1.jpg"
+              alt="Santa Maria"
+            />
+          </div>
+          <div class="text">
+            <h2 class="title">Sobre a Padroeira</h2>
+            <p>
+              Somos uma empresa especializada tanto na criação de sites modernos
+              quanto na formatação e upgrade de PC's e Notebooks. Oferecemos 
+              nossos serviços de forma <i>PRESENCIAL</i> ou <i>REMOTA</i>, facilitando sua 
+              vida de perto ou de longe.
+            </p>
+            <br />
+            <p>
+              Se seu PC precisa de formatação, ou necessita fazer upgrade de 
+              HD para SSD ou de memória, conte conosco! Se ainda não comprou seu 
+              ssd ou memória, deixe que nós compramos e instalamos para você! 
+              Preço na faixa!
+            </p>
+            <br />
+            <p>
+              E mais! Atualização da BIOS e de drivers, instalação do Windows
+              e do pacote Office, entre outros serviços.
+            </p>
+          </div>
+        </div>
+      </section>
+
+      <div class="divider-2"></div>
+
+      <!-- SERVICES -->
+      <section class="section" id="services">
+        <div class="container grid">
+          <header>
+            <h2 class="title">Serviços</h2>
+            <p class="subtitle">
+              <p>Criamos sites e turbinamos PC's.</p>
+              Traga seu PC <i><b>presencialmente</b></i> ou, se preferir, deixe que nós da 
+              <strong>easyPCFormat</strong> o guiemos através de nossos serviços
+            <i><b>remotos</b></i>.
+            </p>
+          </header>
+          <div class="cards grid">
+            <div class="card">
+              <i class="icon-formating"></i>
+              <h3 class="title">Formatação</h3>
+              <p>
+                Formatação e instalação do Windows. Atualização da BIOS
+                e dos Drivers do PC.
+              </p>
+            </div>
+            <div class="card">
+              <i class="icon-upgradessd"></i>
+              <h3 class="title">Upgrade de Hardware</h3>
+              <p>
+                Instalação de HD, SSD e Memória. 
+              </p>
+            </div>
+            <div class="card">
+              <i class="icon-hardware"></i>
+              <h3 class="title">Venda de peças</h3>
+              <p>
+                Não tem o que precisa para o upgrade? Deixa com a gente! 
+                Compramos e instalamos tudo para você! 
+              </p>
+            </div>
+            <div class="card">
+              <i class="icon-site"></i>
+              <h3 class="title">Criação de Sites</h3>
+              <p>
+                Apresente seu negócio para o mundo com um site moderno e 
+                exclusivamente seu!
+              </p>
+            </div>
+            <div class="card">
+              <i class="icon-remote10"></i>
+              <h3 class="title">Atendimento Remoto</h3>
+              <p>
+                Se preferir, podemos fazer o atendimento a distância. Através de 
+                videoconferências detalhadas, seremos seu guia para efetuarmos o
+                serviço.
+              </p>
+            </div>
+            <div class="card">
+              <i class="icon-software"></i>
+              <h3 class="title">Instalação de Softwares</h3>
+              <p>
+                Softwares como Office, Photoshop, Autocad, entre outros.
+              </p>
+            </div>
+          </div>
+        </div>
+      </section>
+
+      <div class="divider-1"></div>
+
+      <!-- TESTIMONIALS -->
+      <section class="section" id="testimonials">
+        <div class="container">
+          <header>
+            <h2 class="title">Programação</h2>
+          </header>
+          <div class="testimonials swiper-container">
+            <div class="swiper-wrapper">
+              <div class="testimonial swiper-slide">
+                <blockquote>
+                  <i class="icon-PRAY"></i>
+                  <p>
+                    Terço das mulheres
+                  </p>
+                  <cite>
+                    <i class="icon-calendar"></i>
+                    Hoje, às 18:00
+                  </cite>
+                </blockquote>
+              </div>
+
+              <div class="testimonial swiper-slide">
+                <blockquote>
+                  <i class="icon-missa"></i>
+                  <p>
+                    Missa
+                  </p>
+                  <cite>
+                    <i class="icon-calendar"></i>
+                    22/07, às 18:00
+                  </cite>
+                </blockquote>
+              </div>
+
+              <div class="testimonial swiper-slide">
+                <blockquote>
+                  <i class="icon-culto"></i>
+                  <p>
+                    Culto
+                  </p>
+                  <cite>
+                    <i class="icon-calendar"></i>
+                    25/07, às 18:00
+                  </cite>
+                </blockquote>
+              </div>
+                            
+            </div>
+
+            <!-- If we need pagination -->
+            <div class="swiper-pagination"></div>
+          </div>
+        </div>
+      </section>
+
+      <div class="divider-2"></div>
+
+      <!-- CONTACT -->
+      <section class="section" id="contact">
+        <div class="container grid">
+          <div class="text">
+            <h2 class="title">Entre em contato com a gente!</h2>
+            <p>
+              Entre em contato com a easyPCFormat, queremos tirar suas dúvidas,
+              fazer seu orçamento, ouvir suas críticas e sugestões.
+            </p>
+            <a
+              href="https://api.whatsapp.com/send?phone=+5577991998770&text=Oi! Gostaria de saber mais sobre os serviços da easyPCFormat."
+              class="button"
+              target="_blank"
+              ><i class="icon-whatsapp"></i> Entrar em contato</a
+            >
+          </div>
+
+          <div class="links">
+            <ul class="grid">
+              <li><i class="icon-whatsapp"></i> 77 99199-8770</li>
+              <li><i class="icon-map-pin"></i> Sorveteria Chaplin - Ibiajara, BA</li>
+              <li><i class="icon-mail"></i> easypcformat@gmail.com</li>
+            </ul>
+          </div>
+        </div>
+      </section>
+
+      <div class="divider-1"></div>
+    </main>
+
+    <footer class="section">
+      <div class="container grid">
+        <div class="brand">
+          <a class="logo logo-alt" href="#home">easy<span>{</span>PC<span>}Format</span>.</a>
+          <p>©2021 easyPCFormat.</p>
+          <p>Todos os direitos reservados.</p>
+          <p>Manoel Prado</p>
+        </div>
+
+        <div class="social grid">
+          <a href="https://www.instagram.com/easypcformat/" target="_blank">
+            <i class="icon-instagram"></i>
+          </a>
+          <a href="https://www.instagram.com/easypcformat/" target="_blank">
+            <i class="icon-facebook"></i>
+          </a>
+          <a href="https://www.youtube.com/channel/UCwSVBuTnDBQ20QDg-scpHsA" target="_blank"
+            ><i class="icon-youtube"></i
+          ></a>
+        </div>
+      </div>
+    </footer>
+
+    <a href="#home" class="back-to-top"><i class="icon-arrow-up"></i></a>
+
+    <!-- swiper -->
+    <script src="https://unpkg.com/swiper/swiper-bundle.min.js"></script>
+
+    <!-- scrollreveal -->
+    <script src="https://unpkg.com/scrollreveal"></script>
+
+    <!-- main.js -->
+    <script src="main.js"></script>
+
+    <!-- modal -->
+    <script>
+      document.getElementsByClassName("tablink")[0].click();
+
+      function openCity(evt, cityName) {
+        var i, x, tablinks;
+        x = document.getElementsByClassName("city");
+        for (i = 0; i < x.length; i++) {
+          x[i].style.display = "none";
+        }
+        tablinks = document.getElementsByClassName("tablink");
+        for (i = 0; i < x.length; i++) {
+          tablinks[i].classList.remove("w3-light-grey");
+        }
+        document.getElementById(cityName).style.display = "block";
+        evt.currentTarget.classList.add("w3-light-grey");
+      }
+    </script>
+    <script src="https://ajax.googleapis.com/ajax/libs/jquery/3.5.1/jquery.min.js"></script>
+    <script src="https://maxcdn.bootstrapcdn.com/bootstrap/3.4.1/js/bootstrap.min.js"></script>
+  </body>
+</html>
