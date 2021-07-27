@@ -520,32 +520,11 @@ nav.show div.icon-close {
   background: var(--base-color);
 }
 
-/*====  CONTACT ============================ */
-#contact .grid {
-  gap: 4rem;
-}
-
-#contact .text p {
-  margin-bottom: 2rem;
-}
-
-#contact .button i,
-#contact ul li i {
-  font-size: 1.5rem;
-  margin-right: 0.625rem;
-}
-
-#contact ul.grid {
-  gap: 2rem;
-}
-
-#contact ul li {
-  display: flex;
-  align-items: center;
-}
-
-#contact ul li i {
-  color: var(--base-color);
+/*====  INSTAGRAM FEED ============================ */
+#contact header {
+  margin-left: 1.5rem;
+  margin-right: 1.5rem;
+  margin-bottom: 0;
 }
 
 /*====  FOOTER ============================ */
@@ -629,7 +608,7 @@ footer .social a:hover {
   }
 
   .section header,
-  #testimonials header {
+  #testimonials header, #contact header {
     max-width: 32rem;
     text-align: center;
     margin-left: auto;
