@@ -520,6 +520,11 @@ nav.show div.icon-close {
   height: 0.75rem;
 }
 
+.swiper-pagination-bullet.swiper-pagination-bullet-active {
+  background: var(--base-color);
+  opacity: 0.6;
+}
+
 .swiper-pagination-bullet-active {
   background: var(--base-color);
 }
