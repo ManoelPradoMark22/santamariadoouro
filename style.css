@@ -178,6 +178,10 @@ body {
   margin-right: 1.5rem;
 }
 
+.containerinstafeed {
+  margin: auto 0;
+}
+
 .grid {
   display: grid;
   gap: 2rem;
