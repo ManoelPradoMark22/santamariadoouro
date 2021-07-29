@@ -388,7 +388,7 @@ nav.show div.icon-close {
   margin-bottom: 2rem;
 }
 
-/*CAROUSEL*/
+/*HOME CAROUSEL*/
 #divCarousel {
   box-sizing:border-box;
 }
@@ -552,35 +552,6 @@ nav.show div.icon-close {
   margin-right: 1.5rem;
 }
 
-/*====  SERVICES ============================ */
-#services {
-  background: white;
-}
-
-.cards.grid {
-  gap: 1.5rem;
-}
-
-.card {
-  padding: 3.625rem 2rem;
-  box-shadow: 0px 0px 12px rgba(0, 0, 0, 0.08);
-  border-bottom: 0.25rem solid var(--base-color);
-  border-radius: 0.25rem 0.25rem 0 0;
-  text-align: center;
-}
-
-.card i {
-  display: block;
-  margin-bottom: 1.5rem;
-  font-size: 5rem;
-  color: var(--base-color);
-}
-
-.card .title {
-  font-size: 1.5rem;
-  margin-bottom: 0.75rem;
-}
-
 /*====  TESTIMONIALS = PROGRAMACAO ============================ */
 #testimonials .container {
   margin-left: 0;
@@ -652,11 +623,82 @@ nav.show div.icon-close {
   background: var(--base-color);
 }
 
-/*====  INSTAGRAM FEED ============================ */
-#contact {
-  
+/*====  SERVICES = EVENTOS ============================ */
+#services {
+  background: white;
 }
 
+#services .container{  
+  margin-left: 0;
+  margin-right: 0;
+}
+
+#services header {
+  margin-left: 1.5rem;
+  margin-right: 1.5rem;
+  margin-bottom: 0;
+}
+
+#services blockquote {
+  padding: 2rem;
+  box-shadow: 0px 0px 12px rgba(0, 0, 0, 0.08);
+  border-radius: 0.25rem;
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+}
+
+#services blockquote i {
+  font-size: 5rem;
+}
+
+#services blockquote p {
+  position: relative;
+  margin-top: 1rem;
+  margin-bottom: 1rem;
+  color: var(--title-color);
+}
+
+#services blockquote p span {
+  font: 700 2.5rem serif;
+  position: absolute;
+  top: -0.375rem;
+  left: -1.875rem;
+  color: var(--base-color);
+}
+
+#services cite {
+  display: flex;
+  align-items: center;
+  font-style: normal;
+}
+
+#services cite i {
+  font-size: 1.5rem;
+  margin-right: 0.5rem;
+}
+
+/* swiper */
+.swiper-slide {
+  height: auto;
+  padding: 4rem 1rem;
+}
+
+.swiper-pagination-bullet {
+  width: 0.75rem;
+  height: 0.75rem;
+}
+
+.swiper-pagination-bullet.swiper-pagination-bullet-active {
+  background: var(--base-color);
+  opacity: 0.6;
+}
+
+.swiper-pagination-bullet-active {
+  background: var(--base-color);
+}
+
+/*==== CONTACT = INSTAGRAM FEED ============================ */
 #contact header {
   margin-left: 1.5rem;
   margin-right: 1.5rem;
@@ -744,7 +786,7 @@ footer .social a:hover {
   }
 
   .section header,
-  #testimonials header, #contact header {
+  #testimonials header, #services header, #contact header {
     max-width: 32rem;
     text-align: center;
     margin-left: auto;
@@ -829,7 +871,7 @@ footer .social a:hover {
   }
 
   /* testimonials */
-  #testimonials .container {
+  #testimonials .container, #services .container {
     margin-left: auto;
     margin-right: auto;
   }
