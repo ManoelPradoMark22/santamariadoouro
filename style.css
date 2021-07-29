@@ -795,6 +795,15 @@ footer .social a:hover {
     text-align: left;
   }
 
+  #divCarousel .carousel .slideshow-container {
+    background-color: rgba(250, 238, 205, 0.4);
+    border-radius: 0.25rem;
+  }
+
+  #divCarousel .carousel .slideshow-container .mySlides img{
+    min-width: 480px;
+  }
+
   /* about */
   #about .container {
     margin: 0 auto;
