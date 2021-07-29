@@ -400,7 +400,8 @@ nav.show div.icon-close {
 
 /* Slideshow container */
 #divCarousel .carousel .slideshow-container {
-  max-width: fit-content;
+  max-width: max-content;
+  max-height: max-content;
   position: relative;
   margin: auto;
 }
@@ -413,6 +414,7 @@ nav.show div.icon-close {
 #divCarousel .carousel .slideshow-container .mySlides img{
   max-width: 480px;
   max-height: 320px;
+  border-radius: 0.25rem;
   object-fit: contain;
 }
 
