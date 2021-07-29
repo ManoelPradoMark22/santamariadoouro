@@ -389,15 +389,18 @@ nav.show div.icon-close {
 }
 
 /*CAROUSEL*/
-#divCarousel .carousel {
+#divCarousel {
   box-sizing:border-box;
+}
+
+#divCarousel .carousel {
   margin-left: 1.5rem;
   margin-right: 1.5rem;
 }
 
 /* Slideshow container */
 #divCarousel .carousel .slideshow-container {
-  max-width: 1000px;
+  max-width: fit-content;
   position: relative;
   margin: auto;
 }
@@ -410,6 +413,7 @@ nav.show div.icon-close {
 #divCarousel .carousel .slideshow-container .mySlides img{
   max-width: 480px;
   max-height: 320px;
+  object-fit: contain;
 }
 
 /* Next & previous buttons */
@@ -427,6 +431,7 @@ nav.show div.icon-close {
   transition: 0.6s ease;
   border-radius: 0 3px 3px 0;
   user-select: none;
+  background-color: rgba(185, 173, 106, 0.3);
 }
 
 /* Position the "next button" to the right */
@@ -438,7 +443,7 @@ nav.show div.icon-close {
 /* On hover, add a black background color with a little bit see-through */
 #divCarousel .carousel .slideshow-container .prev:hover, 
 #divCarousel .carousel .slideshow-container .next:hover {
-  background-color: rgba(0,0,0,0.8);
+  background-color: rgba(203, 183, 67, 0.8);
 }
 
 /* Caption text */
