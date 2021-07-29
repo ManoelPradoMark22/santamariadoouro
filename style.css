@@ -457,6 +457,8 @@ nav.show div.icon-close {
   bottom: 8px;
   width: 100%;
   text-align: center;
+  text-shadow: 0.8px 0.8px #000000;
+  background-color: rgba(185, 173, 106, 0.3);
 }
 
 /* Number text (1/3 etc) */
