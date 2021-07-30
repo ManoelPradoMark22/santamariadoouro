@@ -646,36 +646,62 @@ nav.show div.icon-close {
   display: flex;
   flex-direction: column;
   align-items: center;
+  min-height: 460px;
+  max-height: 460px;
+  position: relative;
 }
 
-#services blockquote i {
-  font-size: 5rem;
+#services blockquote img {
+  max-height: 217px;
+  object-fit: contain;
 }
 
 #services blockquote p {
-  position: relative;
   margin-top: 1rem;
-  margin-bottom: 1rem;
+  margin-bottom: 2.7rem;
   color: var(--title-color);
+  text-align: center;
+  overflow: hidden;
+  text-overflow: ellipsis;
 }
 
-#services blockquote p span {
-  font: 700 2.5rem serif;
-  position: absolute;
-  top: -0.375rem;
-  left: -1.875rem;
-  color: var(--base-color);
-}
-
-#services cite {
+#services blockquote cite {
   display: flex;
+  flex-direction: column;
   align-items: center;
   font-style: normal;
+  bottom: 0.6rem;
+  position: absolute;
 }
 
-#services cite i {
+#services blockquote cite .buttonSmall {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  height: 24px;
+  padding: 2px 10px;
+  margin-bottom: 0.5rem;
+  background: var(--base-color);
+  color: #fff;
+  border: 0;
+  border-radius: 12px;
+  font-size: 14px;
+  user-select: none;
+  cursor: pointer;
+  transition: background 0.3s;
+}
+
+#services blockquote cite .buttonSmall:hover {
+  background: var(--base-color-alt);
+}
+
+#services cite .eventDate{
+  display: flex;
+  align-items: center;
+}
+
+#services cite .eventDate i {
   font-size: 1.5rem;
-  margin-right: 0.5rem;
 }
 
 /* swiper */
@@ -860,21 +886,21 @@ footer .social a:hover {
     grid-auto-flow: column;
   }
 
-  /* services */
-  .cards {
-    grid-template-columns: 1fr 1fr 1fr;
-  }
-
-  .card {
-    padding-left: 3rem;
-    padding-right: 3rem;
-  }
-
   /* testimonials */
   #testimonials .container, #services .container {
     margin-left: auto;
     margin-right: auto;
   }
+
+  /*services*/
+
+  /*
+  #services blockquote { 
+  }
+  #services blockquote img { 
+  }
+  */
+  
 
   /* contact */
   #contact .container {
