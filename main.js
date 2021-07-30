@@ -32,10 +32,29 @@ function changeHeaderWhenScroll() {
 }
 
 /* Testimonials carousel slider swiper */
-const swiper = new Swiper('.swiper-container', {
+const swiper1 = new Swiper('.swiper1', {
   slidesPerView: 1,
   pagination: {
-    el: '.swiper-pagination'
+    el: '.swiper-pagination1'
+  },
+  mousewheel: true,
+  keyboard: true,
+  breakpoints: {
+    767: {
+      slidesPerView: 2,
+      setWrapperSize: true
+    },
+    1000: {
+      slidesPerView: 3,
+      setWrapperSize: true
+    }
+  }
+})
+
+const swiper2 = new Swiper('.swiper2', {
+  slidesPerView: 1,
+  pagination: {
+    el: '.swiper-pagination2'
   },
   mousewheel: true,
   keyboard: true,
@@ -58,7 +77,7 @@ const scrollReveal = ScrollReveal({
 scrollReveal.reveal(
   `#home .carousel, #home .text,
   #about .image, #about .divide, #about .text,
-  #testimonials header, #testimonials .testimonials,
+  #testimonials header, #testimonials .swiper-container,
   #services header, #services .swiper-container,
   #contact .title`,
   { interval: 100 }
