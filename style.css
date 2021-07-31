@@ -312,8 +312,9 @@ nav.show .menu ul {
   display: grid;
 }
 
+/*espacamento entre as nav - menu aberto*/
 nav.show ul.grid {
-  gap: 4rem;
+  gap: 2.5rem;
 }
 
 /* toggle menu */
