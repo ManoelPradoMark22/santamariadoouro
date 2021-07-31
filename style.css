@@ -831,6 +831,10 @@ nav.show div.icon-close {
   -webkit-box-orient: vertical;
 }
 
+#store blockquote p .igTag{
+  font-size: 12px;
+}
+
 #store blockquote cite {
   display: flex;
   flex-direction: column;
