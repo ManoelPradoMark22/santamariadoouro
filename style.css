@@ -656,6 +656,17 @@ nav.show div.icon-close {
   object-fit: contain;
 }
 
+#services blockquote .eventDate{
+  margin-top: 0.5rem;
+  display: flex;
+  align-items: center;
+}
+
+#services blockquote .eventDate i {
+  font-size: 1.5rem;
+  margin-right: 0.5rem;
+}
+
 #services blockquote p {
   margin: auto 0px;
   color: var(--title-color);
@@ -663,7 +674,7 @@ nav.show div.icon-close {
   overflow: hidden;
   text-overflow: ellipsis;
   display: -webkit-box;
-  -webkit-line-clamp: 6;
+  -webkit-line-clamp: 5;
   -webkit-box-orient: vertical;
 }
 
@@ -672,7 +683,8 @@ nav.show div.icon-close {
   flex-direction: column;
   align-items: center;
   font-style: normal;
-  bottom: 0.5rem;
+  margin-bottom: 1.5rem;
+  bottom: 0;
   position: absolute;
 }
 
@@ -682,7 +694,6 @@ nav.show div.icon-close {
   align-items: center;
   height: 24px;
   padding: 2px 10px;
-  margin-bottom: 0.2rem;
   background: var(--base-color);
   color: #fff;
   border: 0;
@@ -695,15 +706,6 @@ nav.show div.icon-close {
 
 #services blockquote cite .buttonSmall:hover {
   background: var(--base-color-alt);
-}
-
-#services cite .eventDate{
-  display: flex;
-  align-items: center;
-}
-
-#services cite .eventDate i {
-  font-size: 1.5rem;
 }
 
 /* swiper */
@@ -894,14 +896,7 @@ footer .social a:hover {
     margin-right: auto;
   }
 
-  /*services*/
-
-  /*
-  #services blockquote { 
-  }
-  #services blockquote img { 
-  }
-  */
+  /* services */
   
 
   /* contact */
