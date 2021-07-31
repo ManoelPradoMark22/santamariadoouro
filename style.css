@@ -648,7 +648,6 @@ nav.show div.icon-close {
   align-items: center;
   min-height: 460px;
   max-height: 460px;
-  position: relative;
 }
 
 #services blockquote img {
@@ -674,7 +673,7 @@ nav.show div.icon-close {
   overflow: hidden;
   text-overflow: ellipsis;
   display: -webkit-box;
-  -webkit-line-clamp: 5;
+  -webkit-line-clamp: 6;
   -webkit-box-orient: vertical;
 }
 
@@ -683,9 +682,7 @@ nav.show div.icon-close {
   flex-direction: column;
   align-items: center;
   font-style: normal;
-  margin-bottom: 1.5rem;
-  bottom: 0;
-  position: absolute;
+  margin: auto 0;
 }
 
 #services blockquote cite .buttonSmall {
@@ -795,7 +792,6 @@ nav.show div.icon-close {
   align-items: center;
   font-style: normal;
   margin: auto 0;
-  bottom: 0;
 }
 
 #store cite .button {
