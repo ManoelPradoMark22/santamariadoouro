@@ -94,6 +94,7 @@ scrollReveal.reveal(
   #about .image, #about .divide, #about .text,
   #testimonials header, #testimonials .swiper-container,
   #services header, #services .swiper-container,
+  #store header, #store .swiper-container,
   #contact .title`,
   { interval: 100 }
 )
