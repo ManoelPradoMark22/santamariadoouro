@@ -735,6 +735,101 @@ nav.show div.icon-close {
   margin-bottom: 0;
 }
 
+/*====  STORE ============================ */
+#store {
+  background: white;
+}
+
+#store .container{  
+  margin-left: 0;
+  margin-right: 0;
+}
+
+#store header {
+  margin-left: 1.5rem;
+  margin-right: 1.5rem;
+  margin-bottom: 0;
+}
+
+#store blockquote {
+  padding: 2rem;
+  box-shadow: 0px 0px 12px rgba(0, 0, 0, 0.08);
+  border-radius: 0.25rem;
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  min-height: 460px;
+  max-height: 460px;
+}
+
+#store blockquote img {
+  max-height: 250px;
+  object-fit: contain;
+}
+
+#store blockquote .eventDate{
+  margin-top: 0.5rem;
+  display: flex;
+  align-items: center;
+}
+
+#store blockquote .eventDate i {
+  font-size: 1.5rem;
+  margin-right: 0.5rem;
+}
+
+#store blockquote p {
+  margin: auto 0px;
+  color: var(--title-color);
+  text-align: center;
+  overflow: hidden;
+  text-overflow: ellipsis;
+  display: -webkit-box;
+  -webkit-line-clamp: 5;
+  -webkit-box-orient: vertical;
+}
+
+#store blockquote cite {
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  font-style: normal;
+  margin: auto 0;
+  bottom: 0;
+}
+
+#store cite .button {
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  text-align: center;
+}
+
+#store cite .button i {
+  font-size: 1.5rem;
+  margin-right: 0.625rem;
+}
+
+/* swiper */
+.swiper-slide {
+  height: auto;
+  padding: 4rem 1rem;
+}
+
+.swiper-pagination-bullet {
+  width: 0.75rem;
+  height: 0.75rem;
+}
+
+.swiper-pagination-bullet.swiper-pagination-bullet-active {
+  background: var(--base-color);
+  opacity: 0.6;
+}
+
+.swiper-pagination-bullet-active {
+  background: var(--base-color);
+}
+
 /*====  FOOTER ============================ */
 footer {
   background: var(--base-color);
@@ -816,7 +911,7 @@ footer .social a:hover {
   }
 
   .section header,
-  #testimonials header, #services header, #contact header {
+  #testimonials header, #services header, #contact header, #store header {
     max-width: 32rem;
     text-align: center;
     margin-left: auto;
@@ -891,7 +986,7 @@ footer .social a:hover {
   }
 
   /* testimonials */
-  #testimonials .container, #services .container {
+  #testimonials .container, #services .container, #store .container {
     margin-left: auto;
     margin-right: auto;
   }

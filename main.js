@@ -66,6 +66,21 @@ const swiper2 = new Swiper('.swiper2', {
   }
 })
 
+const swiper3 = new Swiper('.swiper3', {
+  slidesPerView: 1,
+  pagination: {
+    el: '.swiper-pagination3'
+  },
+  mousewheel: true,
+  keyboard: true,
+  breakpoints: {
+    1000: {
+      slidesPerView: 2,
+      setWrapperSize: true
+    }
+  }
+})
+
 /* ScrollReveal: Mostrar elementos quando der scroll na página */
 const scrollReveal = ScrollReveal({
   origin: 'top',
