@@ -110,8 +110,6 @@
 
       <div id="caption"></div>
     </div>
-    
-    </div>
 
     <header id="header">
       <nav class="container">
@@ -393,12 +391,16 @@
             <div class="swiper-wrapper">
               <div class="service swiper-slide">
                 <blockquote>
-                  <img src="assets/fotos/shop1.jpeg">
+                  <div class="images">
+                    <img src="assets/fotos/shop1.jpeg">
+                  </div>
                   <div class="eventDate">
                     R$150,00
                   </div>
                   <p>
                     Estátua Santa Maria do Ouro (Resina)
+                    <br>
+                    @sorveteriachaplin
                   </p>
                   <cite>
                     <a
@@ -413,12 +415,16 @@
 
               <div class="service swiper-slide">
                 <blockquote>
-                  <img src="assets/fotos/shop2.jpeg">
+                  <div class="images">
+                    <img src="assets/fotos/shop2.jpeg">
+                  </div>
                   <div class="eventDate">
                     R$ 300,00
                   </div>
                   <p>
                     Quadro Santa Maria do Ouro (Artista Eno Prado)
+                    <br>
+                    @pinturasenoprado
                   </p>
                   <cite>
                     <a
@@ -434,6 +440,10 @@
             <!-- If we need pagination -->
             <div class="swiper-pagination swiper-pagination3"></div>
           </div>          
+        </div>
+        <div id="image-viewer">
+          <span class="close">&times;</span>
+          <img class="modal-image" id="full-image">
         </div>
       </section>
 
