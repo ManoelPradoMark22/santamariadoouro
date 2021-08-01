@@ -1023,7 +1023,7 @@ footer .social a:hover {
   #home .text {
     order: 0;
     max-width: 24rem;
-    text-align: left;
+    /*text-align: left;*/
   }
 
   #divCarousel .carousel .slideshow-container {
