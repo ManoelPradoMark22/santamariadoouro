@@ -43,11 +43,11 @@ const swiper1 = new Swiper('.swiper1', {
     767: {
       slidesPerView: 2,
       setWrapperSize: true
-    },
-    1000: {
+    }
+    /*,1000: {
       slidesPerView: 3,
       setWrapperSize: true
-    }
+    } */
   }
 })
 
