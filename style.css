@@ -396,6 +396,7 @@ nav.show div.icon-close {
 /*HOME CAROUSEL*/
 #divCarousel {
   box-sizing:border-box;
+  margin: auto 0;
 }
 
 #divCarousel .carousel {
