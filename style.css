@@ -142,6 +142,17 @@ body {
   animation-duration: 0.6s;
 }
 
+.modal-content, .w3-bar .w3-border-bottom .tablink .w3-bar-item .w3-button {
+  font-size: 10px;
+}
+
+.modal-content #FirstReading,
+.modal-content #Salmo,
+.modal-content #SecondReading,
+.modal-content #Evangelho {
+  font-size: 15px;
+}
+
 @keyframes zoom {
   from {transform:scale(0)}
   to {transform:scale(1)}
@@ -1030,6 +1041,10 @@ footer .social a:hover {
     order: 0;
     max-width: 24rem;
     /*text-align: left;*/
+  }
+
+  .modal-content, .w3-bar .w3-border-bottom .tablink .w3-bar-item .w3-button {
+    font-size: 15px;
   }
 
   #divCarousel .carousel .slideshow-container {
