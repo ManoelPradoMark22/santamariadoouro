@@ -57,13 +57,15 @@ const swiper2 = new Swiper('.swiper2', {
     el: '.swiper-pagination2'
   },
   mousewheel: true,
-  keyboard: true,
-  breakpoints: {
+  keyboard: true
+  /*
+  ,breakpoints: {
     1000: {
       slidesPerView: 2,
       setWrapperSize: true
     }
   }
+  */
 })
 
 const swiper3 = new Swiper('.swiper3', {
