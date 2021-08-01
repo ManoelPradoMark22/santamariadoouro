@@ -967,6 +967,11 @@ footer .social a:hover {
     padding: 10rem 0;
   }
 
+  #home {
+    padding-top: 5rem;
+    padding-bottom: 10rem;
+  }
+
   .section header,
   #testimonials header, #services header, #contact header, #store header {
     max-width: 32rem;
