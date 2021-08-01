@@ -528,14 +528,14 @@ nav.show div.icon-close {
 
 #about .image {
   position: relative;
-  height: 50%;
-  width: 50%;
+  max-height: 350px;
+  max-width: 220px;
   margin: 0 auto;
 }
 
 #about .image::before {
   content: '';
-  height: 200%;
+  height: 100%;
   width: 100%;
   background: var(--base-color-second);
   position: absolute;
