@@ -610,7 +610,7 @@ nav.show div.icon-close {
 #testimonials blockquote .textMain .tooltip i{
   font-size: 1rem;
   margin-left: 0.3rem;
-  cursor: pointer;
+  cursor: help;
 }
 
 /* Tooltip text */
