@@ -539,34 +539,32 @@ nav.show div.icon-close {
 
 #about .image {
   position: relative;
-  max-height: 350px;
+  max-height: 330px;
   max-width: 220px;
   margin: 0 auto;
 }
 
-#about .image::before {
-  content: '';
-  height: 100%;
-  width: 100%;
-  background: var(--base-color-second);
-  position: absolute;
-  top: -8.3%;
-  left: -23%;
-  z-index: 0;
-}
-
 #about .image img {
   position: relative;
-}
-
-#about .image img,
-#about .image::before {
   border-radius: 0.25rem;
 }
 
 #about .text {
   margin-left: 1.5rem;
   margin-right: 1.5rem;
+}
+
+#about .container .image .slideshow-container .mySlides2 {
+  display: none;
+  height: 330px;
+}
+
+/* Fading animation */
+#about .container .image .slideshow-container .fade2{
+  -webkit-animation-name: fade;
+  -webkit-animation-duration: 1.5s;
+  animation-name: fade;
+  animation-duration: 1.5s;
 }
 
 /*====  TESTIMONIALS = PROGRAMACAO ============================ */
