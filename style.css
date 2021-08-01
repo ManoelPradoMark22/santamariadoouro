@@ -594,19 +594,63 @@ nav.show div.icon-close {
   font-size: 5rem;
 }
 
-#testimonials blockquote p {
-  position: relative;
+#testimonials blockquote .textMain{
+  display: flex;
+  align-items: center;
+  text-align: center;
+  font-style: normal;
   margin-top: 1rem;
   margin-bottom: 1rem;
-  color: var(--title-color);
 }
 
-#testimonials blockquote p span {
-  font: 700 2.5rem serif;
+#testimonials blockquote .textMain .tooltip {
+  position: relative;
+}
+
+#testimonials blockquote .textMain .tooltip i{
+  font-size: 1rem;
+  margin-left: 0.3rem;
+  cursor: pointer;
+}
+
+/* Tooltip text */
+#testimonials blockquote .textMain .tooltip .tooltiptext {
+  visibility: hidden;
+  width: 150px;
+  background-color: #555;
+  color: #fff;
+  text-align: center;
+  padding: 5px 5px;
+  border-radius: 6px;
+
+  /* Position the tooltip text */
   position: absolute;
-  top: -0.375rem;
-  left: -1.875rem;
-  color: var(--base-color);
+  z-index: 1;
+  bottom: 125%;
+  left: 50%;
+  margin-left: -60px;
+
+  /* Fade in tooltip */
+  opacity: 0;
+  transition: opacity 0.3s;
+}
+
+/* Tooltip arrow */
+#testimonials blockquote .textMain .tooltip .tooltiptext::after {
+  content: "";
+  position: absolute;
+  top: 100%;
+  left: 50%;
+  margin-left: -5px;
+  border-width: 5px;
+  border-style: solid;
+  border-color: #555 transparent transparent transparent;
+}
+
+/* Show the tooltip text when you mouse over the tooltip container */
+#testimonials blockquote .textMain .tooltip:hover .tooltiptext {
+  visibility: visible;
+  opacity: 1;
 }
 
 #testimonials cite {
