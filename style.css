@@ -329,7 +329,7 @@ nav.show .menu ul {
 
 /*espacamento entre as nav - menu aberto*/
 nav.show ul.grid {
-  gap: 2.5rem;
+  gap: 3rem;
 }
 
 /* toggle menu */
