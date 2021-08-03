@@ -37,7 +37,7 @@ const swiper1 = new Swiper('.swiper1', {
   pagination: {
     el: '.swiper-pagination1'
   },
-  mousewheel: true,
+  mousewheel: false,
   keyboard: true,
   breakpoints: {
     767: {
@@ -56,7 +56,7 @@ const swiper2 = new Swiper('.swiper2', {
   pagination: {
     el: '.swiper-pagination2'
   },
-  mousewheel: true,
+  mousewheel: false,
   keyboard: true
   /*
   ,breakpoints: {
@@ -73,7 +73,7 @@ const swiper3 = new Swiper('.swiper3', {
   pagination: {
     el: '.swiper-pagination3'
   },
-  mousewheel: true,
+  mousewheel: false,
   keyboard: true,
   breakpoints: {
     1000: {
