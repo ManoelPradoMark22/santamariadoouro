@@ -94,99 +94,6 @@ body {
   );
 }
 
-/* Style the Image Used to Trigger the Modal */
-#myImg {
-  cursor: pointer;
-  transition: 0.3s;
-}
-
-/* The Modal (background) */
-.modal {
-  display: none; /* Hidden by default */
-  position: fixed; /* Stay in place */
-  z-index: 1; /* Sit on top */
-  padding-top: 100px; /* Location of the box */
-  left: 0;
-  top: 0;
-  width: 100%; /* Full width */
-  height: 100%; /* Full height */
-  overflow: auto; /* Enable scroll if needed */
-  background-color: rgb(255,255,255); /* Fallback color */
-  background-color: rgba(255,255,255); /* Black w/ opacity */
-}
-
-/* Modal Content (Image) */
-.modal-content {
-  overflow-y: initial !important;
-  margin: auto;
-  display: block;
-  width: 80%;
-  max-width: 700px;
-}
-
-/* Caption of Modal Image (Image Text) - Same Width as the Image */
-#caption {
-  margin: auto;
-  display: block;
-  width: 80%;
-  max-width: 700px;
-  text-align: center;
-  color: #ccc;
-  padding: 10px 0;
-  height: 10px;
-}
-
-/* Add Animation - Zoom in the Modal */
-.modal-content, #caption {
-  animation-name: zoom;
-  animation-duration: 0.6s;
-}
-
-.modal-content, .w3-bar .w3-border-bottom .tablink .w3-bar-item .w3-button {
-  font-size: 10px;
-}
-
-.modal-content #FirstReading,
-.modal-content #Salmo,
-.modal-content #SecondReading,
-.modal-content #Evangelho {
-  font-size: 15px;
-}
-
-@keyframes zoom {
-  from {transform:scale(0)}
-  to {transform:scale(1)}
-}
-
-/* The Close Button */
-.close {
-  position: absolute;
-  top: 4.5rem;;
-  right: 22.5px;
-  color: #696969;
-  font-size: 40px;
-  font-weight: bold;
-  transition: 0.3s;
-}
-
-.close:hover,
-.close:focus {
-  color: rgb(43, 43, 43);
-  text-decoration: none;
-  cursor: pointer;
-}
-
-/* 100% Image Width on Smaller Screens */
-@media only screen and (max-width: 700px){
-  .modal-content {
-    width: 100%;
-  }
-
-  .modal-image {
-    width: 100%;
-  }
-}
-
 /*====  LAYOUT ============================ */
 .container {
   margin-left: 1.5rem;
@@ -869,23 +776,23 @@ nav.show div.icon-close {
   align-items: center;
 }
 
-#store blockquote .eventDate i {
-  font-size: 1.5rem;
-  margin-right: 0.5rem;
-}
-
 #store blockquote p {
   margin: auto 0px;
   color: var(--title-color);
   text-align: center;
+}
+
+#store blockquote p .prodName{
+  height: 22px;
   overflow: hidden;
   text-overflow: ellipsis;
   display: -webkit-box;
-  -webkit-line-clamp: 5;
+  -webkit-line-clamp: 1;
   -webkit-box-orient: vertical;
 }
 
-#store blockquote p .igTag{
+#store blockquote .igTag{
+  margin: auto 0px;
   font-size: 12px;
 }
 
@@ -1020,10 +927,12 @@ footer .social a:hover {
     padding: 10rem 0;
   }
 
+  /*
   #home {
     padding-top: 5rem;
     padding-bottom: 10rem;
   }
+  */
 
   .section header,
   #testimonials header, #services header, #contact header, #store header {
@@ -1083,10 +992,6 @@ footer .social a:hover {
     order: 0;
     max-width: 24rem;
     /*text-align: left;*/
-  }
-
-  .modal-content, .w3-bar .w3-border-bottom .tablink .w3-bar-item .w3-button {
-    font-size: 15px;
   }
 
   #divCarousel .carousel .slideshow-container {
