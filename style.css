@@ -521,6 +521,8 @@ nav.show div.icon-close {
 /* Tooltip text */
 #testimonials blockquote .textMain .tooltip .tooltiptext {
   visibility: hidden;
+  max-height: 180px;
+  font-size: 12px;
   width: 150px;
   background-color: #555;
   color: #fff;
