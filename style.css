@@ -435,6 +435,28 @@ nav.show div.icon-close {
   to {opacity: 1}
 }
 
+/*ao passar justOne (centraliza pq so vai ter um evento)*/
+.scroll.justOne {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+}
+/*swiper horizontal*/
+.scroll::-webkit-scrollbar {
+  /*width: 0px;*/
+  height:0.4rem;
+}
+.scroll::-webkit-scrollbar-track{
+  background:rgba(0,0,0,.1);
+}
+
+.scroll::-webkit-scrollbar-thumb{
+  background:hsl(var(--hue) 36% 57%);
+}
+.scroll::-webkit-scrollbar-thumb:hover{
+  background:hsl(var(--hue) 41% 53%);
+}
+
 /*====  ABOUT ============================ */
 #about {
   background: white;
