@@ -595,6 +595,7 @@ nav.show div.icon-close {
 
 /* swiper */
 .swiper-slide {
+  width: auto;
   height: auto;
   padding: 4rem 1rem;
 }
@@ -1075,4 +1076,14 @@ footer .social a:hover {
     --subtitle-font-size: 1.125rem;
   }
 }
+
+/* small devices:*/
+@media (min-width: 480px) {
+.swiper-slide {
+  width: 100%;
+  height: auto;
+  padding: 4rem 1rem;
+}
+}
+
 /* medium devices: 767 > */
