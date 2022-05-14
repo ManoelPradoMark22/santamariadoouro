@@ -497,6 +497,7 @@ nav.show div.icon-close {
 }
 
 /*====  TESTIMONIALS = PROGRAMACAO ============================ */
+
 #testimonials .container {
   margin-left: 0;
   margin-right: 0;
@@ -526,24 +527,36 @@ nav.show div.icon-close {
   align-items: center;
   text-align: center;
   font-style: normal;
+  font-weight: bold;
   margin-top: 1rem;
   margin-bottom: 1rem;
 }
 
-#testimonials blockquote .textMain .tooltip {
-  position: relative;
+#testimonials blockquote .textMainInfo{
+  display: flex;
+  align-items: center;
+  text-align: center;
+  font-size: 0.8rem;
+  font-weight: bold;
+  font-style: normal;
+  margin-top: 1rem;
 }
 
-#testimonials blockquote .textMain .tooltip i{
+#testimonials blockquote .textMainInfo .tooltip {
+  position: relative;
+  z-index: 101;
+}
+
+#testimonials blockquote .textMainInfo .tooltip i{
   font-size: 1rem;
   margin-left: 0.3rem;
   cursor: help;
+  z-index: 101;
 }
 
 /* Tooltip text */
-#testimonials blockquote .textMain .tooltip .tooltiptext {
+#testimonials blockquote .textMainInfo .tooltip .tooltiptext {
   visibility: hidden;
-  max-height: 180px;
   font-size: 12px;
   width: 150px;
   background-color: #555;
@@ -554,7 +567,7 @@ nav.show div.icon-close {
 
   /* Position the tooltip text */
   position: absolute;
-  z-index: 1;
+  z-index: 101;
   bottom: 125%;
   left: 50%;
   margin-left: -60px;
@@ -565,7 +578,7 @@ nav.show div.icon-close {
 }
 
 /* Tooltip arrow */
-#testimonials blockquote .textMain .tooltip .tooltiptext::after {
+#testimonials blockquote .textMainInfo .tooltip .tooltiptext::after {
   content: "";
   position: absolute;
   top: 100%;
@@ -577,20 +590,48 @@ nav.show div.icon-close {
 }
 
 /* Show the tooltip text when you mouse over the tooltip container */
-#testimonials blockquote .textMain .tooltip:hover .tooltiptext {
+#testimonials blockquote .textMainInfo .tooltip:hover .tooltiptext {
   visibility: visible;
   opacity: 1;
+  z-index: 101;
 }
 
-#testimonials cite {
+#testimonials .withIcon{
   display: flex;
+  flex-direction: row;
   align-items: center;
   font-style: normal;
 }
 
-#testimonials cite i {
+#testimonials .withIcon i {
   font-size: 1.5rem;
   margin-right: 0.5rem;
+}
+
+#testimonials cite {
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  font-style: normal;
+  text-align: center;
+  font-size: 0.9rem;
+}
+
+#testimonials cite hr{
+  width: 100%;
+  margin: 0.1rem;
+  opacity: 0.2;
+}
+
+#testimonials cite text{
+  font-style: italic;
+  font-size: 1rem;
+  margin-bottom: 0.5rem;
+  margin-top: 0.5rem;
+}
+
+#testimonials cite p span{
+  font-weight: bold;
 }
 
 /* swiper */
