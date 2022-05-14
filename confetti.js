@@ -1,5 +1,5 @@
 /*CONFETTI CODE*/
-var maxParticleCount = 150; //set max confetti count
+var maxParticleCount = 20; //set max confetti count 
 var particleSpeed = 2; //set the particle animation speed
 var startConfetti; //call to start confetti animation
 var stopConfetti; //call to stop adding confetti
@@ -21,7 +21,7 @@ var removeConfetti; //call to stop the confetti animation and remove all confett
 		particle.color = colors[(Math.random() * colors.length) | 0];
 		particle.x = Math.random() * width;
 		particle.y = Math.random() * height - height;
-		particle.diameter = Math.random() * 10 + 5;
+		particle.diameter = Math.random() * 5 + 3;
 		particle.tilt = Math.random() * 10 - 10;
 		particle.tiltAngleIncrement = Math.random() * 0.07 + 0.05;
 		particle.tiltAngle = 0;
