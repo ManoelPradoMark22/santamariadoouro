@@ -205,3 +205,4 @@ function showSlides2() {
   dots2[slideIndex2-1].className += " active";
   setTimeout(showSlides2, 3000); // Change image every 3 seconds
 }
+
