@@ -381,8 +381,8 @@ nav.show div.icon-close {
   bottom: 8px;
   width: 100%;
   text-align: center;
-  text-shadow: 0.8px 0.8px #000000;
-  background-color: rgba(185, 173, 106, 0.3);
+  text-shadow: 1px 1px #000000;
+  background-color: rgba(185, 173, 106, 0.7);
   overflow: hidden;
   text-overflow: ellipsis;
   display: -webkit-box;
