@@ -496,20 +496,20 @@ nav.show div.icon-close {
   animation-duration: 1.5s;
 }
 
-/*====  TESTIMONIALS = PROGRAMACAO ============================ */
+/*====  programacao ============================ */
 
-#testimonials .container {
+#programacao .container {
   margin-left: 0;
   margin-right: 0;
 }
 
-#testimonials header {
+#programacao header {
   margin-left: 1.5rem;
   margin-right: 1.5rem;
   margin-bottom: 0;
 }
 
-#testimonials blockquote {
+#programacao blockquote {
   padding: 2rem;
   box-shadow: 0px 0px 12px rgba(0, 0, 0, 0.08);
   border-radius: 0.25rem;
@@ -518,11 +518,11 @@ nav.show div.icon-close {
   align-items: center;
 }
 
-#testimonials blockquote i {
+#programacao blockquote i {
   font-size: 5rem;
 }
 
-#testimonials blockquote .textMain{
+#programacao blockquote .textMain{
   display: flex;
   align-items: center;
   text-align: center;
@@ -532,7 +532,7 @@ nav.show div.icon-close {
   margin-bottom: 1rem;
 }
 
-#testimonials blockquote .textMainInfo{
+#programacao blockquote .textMainInfo{
   display: flex;
   align-items: center;
   text-align: center;
@@ -542,12 +542,12 @@ nav.show div.icon-close {
   margin-top: 1rem;
 }
 
-#testimonials blockquote .textMainInfo .tooltip {
+#programacao blockquote .textMainInfo .tooltip {
   position: relative;
   z-index: 101;
 }
 
-#testimonials blockquote .textMainInfo .tooltip i{
+#programacao blockquote .textMainInfo .tooltip i{
   font-size: 1rem;
   margin-left: 0.3rem;
   cursor: help;
@@ -555,7 +555,7 @@ nav.show div.icon-close {
 }
 
 /* Tooltip text */
-#testimonials blockquote .textMainInfo .tooltip .tooltiptext {
+#programacao blockquote .textMainInfo .tooltip .tooltiptext {
   visibility: hidden;
   font-size: 12px;
   width: 150px;
@@ -578,7 +578,7 @@ nav.show div.icon-close {
 }
 
 /* Tooltip arrow */
-#testimonials blockquote .textMainInfo .tooltip .tooltiptext::after {
+#programacao blockquote .textMainInfo .tooltip .tooltiptext::after {
   content: "";
   position: absolute;
   top: 100%;
@@ -590,25 +590,25 @@ nav.show div.icon-close {
 }
 
 /* Show the tooltip text when you mouse over the tooltip container */
-#testimonials blockquote .textMainInfo .tooltip:hover .tooltiptext {
+#programacao blockquote .textMainInfo .tooltip:hover .tooltiptext {
   visibility: visible;
   opacity: 1;
   z-index: 101;
 }
 
-#testimonials .withIcon{
+#programacao .withIcon{
   display: flex;
   flex-direction: row;
   align-items: center;
   font-style: normal;
 }
 
-#testimonials .withIcon i {
+#programacao .withIcon i {
   font-size: 1.5rem;
   margin-right: 0.5rem;
 }
 
-#testimonials cite {
+#programacao cite {
   display: flex;
   flex-direction: column;
   align-items: center;
@@ -617,20 +617,20 @@ nav.show div.icon-close {
   font-size: 0.9rem;
 }
 
-#testimonials cite hr{
+#programacao cite hr{
   width: 100%;
   margin: 0.1rem;
   opacity: 0.2;
 }
 
-#testimonials cite text{
+#programacao cite text{
   font-style: italic;
   font-size: 1rem;
   margin-bottom: 0.5rem;
   margin-top: 0.5rem;
 }
 
-#testimonials cite p span{
+#programacao cite p span{
   font-weight: bold;
 }
 
@@ -1007,7 +1007,7 @@ footer .social a:hover {
   */
 
   .section header,
-  #testimonials header, #services header, #contact header, #store header {
+  #programacao header, #services header, #contact header, #store header {
     max-width: 32rem;
     text-align: center;
     margin-left: auto;
@@ -1081,8 +1081,8 @@ footer .social a:hover {
     grid-auto-flow: column;
   }
 
-  /* testimonials */
-  #testimonials .container, #services .container, #store .container {
+  /* programacao */
+  #programacao .container, #services .container, #store .container {
     margin-left: auto;
     margin-right: auto;
   }
