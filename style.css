@@ -680,11 +680,12 @@ nav.show div.icon-close {
   align-items: center;
   min-height: 460px;
   max-height: 460px;
+  max-width: 460px;
 }
 
 #services blockquote img {
   max-height: 217px;
-  object-fit: contain;
+  
 }
 
 #services blockquote .eventDate{
@@ -707,6 +708,10 @@ nav.show div.icon-close {
   display: -webkit-box;
   -webkit-line-clamp: 6;
   -webkit-box-orient: vertical;
+}
+
+#services blockquote p span{
+  font-weight: bold;
 }
 
 #services blockquote cite {
@@ -739,6 +744,7 @@ nav.show div.icon-close {
 
 /* swiper */
 .swiper-slide {
+  width: auto;
   height: auto;
   padding: 4rem 1rem;
 }
@@ -1117,14 +1123,3 @@ footer .social a:hover {
     --subtitle-font-size: 1.125rem;
   }
 }
-
-/* small devices:*/
-@media (min-width: 480px) {
-.swiper-slide {
-  width: 100%;
-  height: auto;
-  padding: 4rem 1rem;
-}
-}
-
-/* medium devices: 767 > */
